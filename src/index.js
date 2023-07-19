@@ -1,21 +1,49 @@
 import './style.css';
 
-const tasks = [
-  { description: 'Buy groceries', completed: false, index: 0 },
-  { description: 'Do laundry', completed: true, index: 1 },
-  { description: 'Clean room', completed: false, index: 2 },
+const todoBody = document.querySelector('.todo_main_content');
+
+const todos = [
+  {
+    id: 1,
+    task: 'Do Laundary',
+    status: true,
+  },
+  {
+    id: 2,
+    task: 'Go shooping',
+    status: false,
+  },
+  {
+    id: 3,
+    task: 'Clean house',
+    status: true,
+  },
+
+  {
+    id: 3,
+    task: 'Clean house',
+    status: true,
+  },
 ];
 
-function renderTasks() {
-  const list = document.getElementById('task-list');
+const rendermytodolist = () => {
+  if (todos.length > 0) {
+    todos.forEach((todo) => {
+      const todoList = `<li data-id="${todo.id}" data-status="${todo.status}">
+      <label for="${todo.id}">
+      <input type="checkbox" id="${todo.id}" value="${todo.id}"
+      ${todo.status === 'complete' ? 'true' : false}/>
+      <input type="text" value="${todo.task}" readonly />
+      </label>
+          <div class="action">
+          <button class="js-delete">
+              <i class="ri-delete-bin-fill"></i>
+          </button>
+          </div> 
+      </li>`;
+      todoBody.querySelector('.js-todo-list').innerHTML += todoList;
+    });
+  }
+};
 
-  list.innerHTML = '';
-
-  tasks.forEach((task) => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = `${task.description} - ${task.completed ? 'Completed' : 'Not completed'}`;
-    list.appendChild(listItem);
-  });
-}
-
-window.onload = renderTasks;
+rendermytodolist();
