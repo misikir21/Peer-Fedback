@@ -1,5 +1,7 @@
 # todo-list
+
 This simple to-do list application is built with JavaScript, HTML, and CSS. It allows users to create a list of tasks with a description, completion status, and index.
+
 
 # 📗 Table of Contents
 
@@ -131,6 +133,7 @@ Feel free to check the [issues page](../../issues/).
 If you like this project just give it a star ⭐️ .
 
 Everybody is welcome to suggest changes in the iread books project.
+
 
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
 
