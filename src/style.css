@@ -1,9 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    left: 50%;
-    position: absolute;
-    font-family: sans-serif;
-    font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  left: 50%;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 10px;
+  background-color: aqua;
+}
+
+ul li {
+  list-style: none;
 }
