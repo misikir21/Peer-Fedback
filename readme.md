@@ -165,4 +165,6 @@ I would like to thank Microverse
 
 ## 📝 License <a name="license"></a>
 
-This project is licensed<a  href="https://choosealicense.com/licenses/mit/">MIT</a>
+License Grant: misikir21 grants the licensee a non-exclusive, non-transferable, revocable license to use the todo list app for personal or commercial purposes.
+Restrictions: The licensee shall not copy, modify, distribute, sell, sublicense, or transfer the to-do list app or any portion thereof. The licensee shall not reverse engineer, decompile, or disassemble the to-do list app.
+Ownership: The licensor retains all rights, title, and interest in and to the to-do list app, including all intellectual property rights therein other mit license are also valid.This project is licensed<a  href="https://choosealicense.com/licenses/mit/">MIT</a>
