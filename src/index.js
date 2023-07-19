@@ -6,33 +6,33 @@ const todos = [
   {
     index: 1,
     description: 'Do Laundary',
-    completed : true,
+    completed: true,
   },
   {
     index: 2,
     description: 'Go shooping',
-    completed : false,
+    completed: false,
   },
   {
     index: 3,
     description: 'Clean house',
-    completed : true,
+    completed: true,
   },
 
   {
     index: 3,
     description: 'Clean house',
-    completed : true,
+    completed: true,
   },
 ];
 
 const rendermytodolist = () => {
   if (todos.length > 0) {
     todos.forEach((todo) => {
-      const todoList = `<li data-index="${todo.index}" data-completed ="${todo.completed }">
+      const todoList = `<li data-index="${todo.index}" data-completed ="${todo.completed}">
       <label for="${todo.index}">
       <input type="checkbox" index="${todo.index}" value="${todo.index}"
-      ${todo.completed  === 'complete' ? 'true' : false}/>
+      ${todo.completed === 'complete' ? 'true' : false}/>
       <input type="text" value="${todo.description}" readonly />
       </label>
           <div class="action">

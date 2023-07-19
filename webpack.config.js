@@ -5,10 +5,6 @@ module.exports = {
   entry: {
     bundle: path.resolve(__dirname, 'src/index.js'),
   },
-  devServer: {
-    static: './dist',
-  },
-
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/index.html'),
@@ -21,6 +17,17 @@ module.exports = {
   },
   optimization: {
     runtimeChunk: 'single',
+  },
+  devtool: 'source-map',
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
