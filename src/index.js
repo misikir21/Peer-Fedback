@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './style.css';
 import Selector from '../modules/selectors.js';
 import Todo from '../modules/todo.js';
@@ -24,5 +23,3 @@ objectSelector.clear.addEventListener('click', () => {
   localStorage.setItem('todos', JSON.stringify(objectTodo.todos));
   objectTodo.dispaly();
 });
-=======
->>>>>>> 11381957778ed96a6aa54d50a0297684cd32abe6
