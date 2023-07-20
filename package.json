@@ -34,8 +34,12 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.26.1",
     "bootstrap-icons": "^1.10.5",
     "lodash": "^4.17.21"
+=======
+    "axios": "^0.26.1"
+>>>>>>> 11381957778ed96a6aa54d50a0297684cd32abe6
   }
 }
