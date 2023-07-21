@@ -27,11 +27,8 @@ This simple to-do list application is built with JavaScript, HTML, and CSS. It a
 - **[JS Class Practices]**
 - **[Medium-fidelity Wireframes]**
 
-# 📗 Table of Contents
 
-
-
-# 📖  todo-list: plain JavaScript with objects <a name="about-project"></a>
+# 📖  todo-list: <a name="about-project"></a>
 
 This is a simple to-do list application built with JavaScript, HTML, and CSS. It allows users to create a list of tasks with a description, completion status, and index.
 
