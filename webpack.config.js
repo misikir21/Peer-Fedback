@@ -5,6 +5,23 @@ module.exports = {
   entry: {
     bundle: path.resolve(__dirname, 'src/index.js'),
   },
+<<<<<<< HEAD
+=======
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/index.html'),
+    }),
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
+  devtool: 'source-map',
+>>>>>>> 2e78be9af7c9e0901f3e974630984da4ae572cb1
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
