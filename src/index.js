@@ -1,26 +1,44 @@
 import './style.css';
-import Selector from '../modules/selectors.js';
-import Todo from '../modules/todo.js';
 
-const objectSelector = new Selector();
-const objectTodo = new Todo();
+const todoBody = document.querySelector('.todo_main_content');
 
-window.addEventListener('load', () => {
-  objectTodo.dispaly();
-});
-objectSelector.todoForm.addEventListener('submit', (e) => {
-  objectTodo.addTask(e);
-});
+const todos = [
+  {
+    index: 1,
+    description: 'Do Laundry',
+    completed: true,
+  },
+  {
+    index: 2,
+    description: 'Go shopping',
+    completed: false,
+  },
+  {
+    index: 3,
+    description: 'Clean house',
+    completed: true,
+  },
+  {
+    index: 4,
+    description: 'Walk the dog',
+    completed: false,
+  },
+];
 
-objectSelector.todoBody.addEventListener('click', (e) => {
-  objectTodo.handleFormAction(e);
-});
+const renderTodoList = () => {
+  const todoListHtml = todos.map((todo) => `
+    <li data-index="${todo.index}" data-completed="${todo.completed}">
+      <label>
+        <input type="checkbox" ${todo.completed ? 'checked' : ''} />
+        <span>${todo.description}</span>
+      </label>
+      <button class="js-delete">
+        <i class="ri-delete-bin-fill"></i>
+      </button>
+    </li>
+  `).join('');
 
-objectSelector.clear.addEventListener('click', () => {
-  objectTodo.todos = objectTodo.todos.filter((todo) => todo.status !== true);
-  objectTodo.todos.forEach((todo, id) => {
-    todo.id = id + 1;
-  });
-  localStorage.setItem('todos', JSON.stringify(objectTodo.todos));
-  objectTodo.dispaly();
-});
+  todoBody.querySelector('.js-todo-list').innerHTML = todoListHtml;
+};
+
+renderTodoList();
