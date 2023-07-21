@@ -2,28 +2,7 @@ import './style.css';
 
 const todoBody = document.querySelector('.todo_main_content');
 
-const todos = [
-  {
-    index: 1,
-    description: 'Do Laundry',
-    completed: true,
-  },
-  {
-    index: 2,
-    description: 'Go shopping',
-    completed: false,
-  },
-  {
-    index: 3,
-    description: 'Clean house',
-    completed: true,
-  },
-  {
-    index: 4,
-    description: 'Walk the dog',
-    completed: false,
-  },
-];
+const todos = [];
 
 const renderTodoList = () => {
   const todoListHtml = todos.map((todo) => `
