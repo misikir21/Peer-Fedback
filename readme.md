@@ -27,9 +27,7 @@ This is a simple to-do list application built with JavaScript, HTML, and CSS. It
 - [📝 License](#license)
 
 ### Key Features <a name="key-features"></a>
-- **More sections and styling will be added**
-- **[JS Class Practices]**
-- **[Medium-fidelity Wireframes]**
+- **add remove, clear tasks from todo list**
 
 
 
