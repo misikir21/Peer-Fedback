@@ -115,8 +115,6 @@ Open index.html using live server extension.
 
 👤 misikir teka
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] JavaScript classes will add
 - [ ] A complete website with navigation
 - [ ] Add more styles to make it more awesome
 
@@ -130,7 +128,7 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project just give it a star ⭐️ .
 
-Everybody is welcome to suggest changes in iread books project.
+Everybody is welcome to suggest changes in the todlist project.
 
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
 
